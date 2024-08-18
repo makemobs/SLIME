@@ -1,0 +1,14 @@
+Slime:
+  Type: SLIME
+  Display: 'スライム'
+  Health: 20
+  Damage: 3
+  AIGoalSelectors:
+    - 0 clear
+    - 1 meleeattack
+  Skills:
+    - damage{d=3} @LivingEntitiesInRadius{r=5}
+    - trigger{c=onTame}
+  Drops:
+    - slime_ball:1
+    - money:20
