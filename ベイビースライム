@@ -1,0 +1,13 @@
+BabySlime:
+  Type: SLIME
+  Display: 'ベイビースライム'
+  Health: 10
+  Damage: 1
+  AIGoalSelectors:
+    - 0 clear
+    - 1 meleeattack
+  Skills:
+    - damage{d=1} @LivingEntitiesInRadius{r=5}
+    - trigger{c=onTame}
+  Drops:
+    - money:10
